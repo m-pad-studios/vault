@@ -1,0 +1,8 @@
+Google APIs Error Log Solutions
+
+If receiving - ACCESS_TOKEN_SCOPE_INSUFFICIENT - error.
+You need to make sure you look at the code that is initially creating the token.
+
+So I fixed this by changing the way I called the Google scopes. 
+
+DriveScopes.DRIVE is different than DriveScopes.DRIVE_METADATA_READONLY
